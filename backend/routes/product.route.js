@@ -16,7 +16,7 @@ router.use((req, res, next) => {
   if (!req || !req.method || !req.url) {
     console.error("❌ Request object is undefined!");
   } else {
-    debug(`✅ Received ${req.method} request on ${req.url}`);
+    debug(`Received ${req.method} request on ${req.url}`);
   }
   next();
 });
