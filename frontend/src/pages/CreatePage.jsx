@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Heading, Box, useColorModeValue, VStack, Input } from "@chakra-ui/react";
+import { Container, Heading, Box, useColorModeValue, VStack, Input, Button } from "@chakra-ui/react";
 
 export default function CreatePage() {
 
@@ -47,6 +47,7 @@ export default function CreatePage() {
               value={newProduct.image} 
               onChange={(e) => setNewProduct({...newProduct, image: e.target.value})}
             />
+            <Button colorScheme="blue" w="full">Add Product</Button>
           </VStack>
         </Box>
       </VStack>
